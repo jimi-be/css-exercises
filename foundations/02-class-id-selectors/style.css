@@ -1,0 +1,26 @@
+/*odd numbered*/
+
+.odd {
+    background-color: #ffc0cb;
+    font-family: Verdana, sans-serif;
+}
+
+.odd.three {
+    font-size: 24px;
+}
+/* Odin solution does not chain for this one:
+.three {
+    font-size: 24px;
+}
+*/
+
+#two {
+    color:rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#four {
+    background-color: rgb(111, 211, 81);
+    font-size: 24px;
+    font-weight: bold;
+}
