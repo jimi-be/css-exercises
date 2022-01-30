@@ -1,0 +1,16 @@
+/* using class selectors */
+.container .text {
+    background-color:  yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* alternate solution */
+/* combining class and type selector */
+/* div .text {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+} */
