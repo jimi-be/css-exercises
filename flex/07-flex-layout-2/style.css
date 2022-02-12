@@ -4,33 +4,37 @@ body {
   min-height: 100vh;
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; << Initially had this line.
+  Not needed because default is stretch (?)*/
 }
 
+/*set alt sizing as default (new/improved way)*/
 html {
   box-sizing: border-box;
 }
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
+/*******/
+/*remove default link styling*/
 a {
   text-decoration: none;
   color: #fff;
   font-size: 24px;
 }
-
+/*remove defualt list styling and behavior*/
 ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/*make links and cards stretch to fit middle section*/
 .content {
   display: flex;
   flex:1;
 }
-
+/*trying to reduce duplicate code a little*/
 .header, .footer {
   display: flex;
   align-items: center;
@@ -42,8 +46,7 @@ ul{
   color: white;
   font-size: 32px;
   font-weight: 900;
-  padding-left: 16px;
-  
+  padding-left: 16px;  
 }
 
 .footer {
@@ -56,7 +59,7 @@ ul{
 .sidebar {
   width: 300px;
   background: royalblue;
-  flex-shrink: 0;
+  flex-shrink: 0; /*ensure width=300*/
   padding: 16px;
 }
 
@@ -64,17 +67,15 @@ ul{
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  max-height: 250px;
-  max-width: 250px;
+  height: 300px;
+  width: 300px;
   padding: 8px;
-  /* display: flex;
-  max-height: 200px; */
+  margin-top: 32px;
+  margin-left: 32px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px; 
-  /* max-height: 300px;
-  max-width: 300px; */
+  align-content: flex-start; /*my way of removing gaps between rows of cards */
 }
